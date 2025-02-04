@@ -30,6 +30,7 @@ const taquillaScheduleMessage = async () => {
             isReunion = true
             continue
         }
+        block.sort((a, b) => convertTime(a) - convertTime(b))
         // We iterate over the blocks
         block.forEach((time, index) => {
             // We convert time to a int

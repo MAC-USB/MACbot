@@ -13,9 +13,10 @@ const BLOCK = "Hora";
  * @returns {number} Index of the BLOCKS_HOURS array.
  */
 export const convertTime = (time) => {
-    const [hour, p] = time.split(" ")
-    const i = parseInt(hour)
-    return p.includes("am") ? i - 8 : i === 12 ? 4 : i + 4
+    // const [hour, p] = time.split(" ")
+    const i = parseInt(time)
+    // return p.includes("am") ? i - 8 : i === 12 ? 4 : i + 4
+    return i - 1
 }
 
 /**
